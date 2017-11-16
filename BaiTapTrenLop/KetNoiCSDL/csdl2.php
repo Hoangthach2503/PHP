@@ -10,13 +10,19 @@
 	//Lua chon co so du lieu
 	mysqli_select_db($link, "DULIEU");
 	//insert mot ban ghi
-	$sql1="insert into Table1(maso,hoten,ngaysinh,nghenghiep) values('02','Le Van R','2015-05-09','Sinhvien')";
-	$result=mysqli_query($link,$sql1);
+
+
+	mysqli_query($link,"SET NAMES 'utf8'");
+	// $sql1="insert into Table1(maso,hoten,ngaysinh,nghenghiep) values('02','Le Van R','2015-05-09','Sinhvien')";
+	// $result=mysqli_query($link,$sql1);
 	
 	//update ban ghi
-	$sql2="update Table1 set hoten='Le Duc Thang' where maso='02'";
-	$result=mysqli_query($link, $sql2);
-	if(!$result) die("khong the thuc hien cau lenh SQL:".mysql_error($link));
+
+	// $sql2="update Table1 set hoten='Le Duc Thang' where maso='02'";
+	// $result=mysqli_query($link, $sql2);
+	// if(!$result) die("khong the thuc hien cau lenh SQL:".mysql_error($link));
+	
+
 	//delete mot ban ghi
 
 	//select cac ban ghi
@@ -35,8 +41,8 @@
 	}
 
 	echo '</table>';
-	echo mysqli_affected_rows($link);
-	//mysqli_free_result(($result));
+	//echo mysqli_affected_rows($link);
+	mysqli_free_result(($result));
 	mysqli_close($link);
 ?>
 </body>

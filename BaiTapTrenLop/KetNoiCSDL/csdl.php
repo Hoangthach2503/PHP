@@ -9,6 +9,7 @@
 	$link =mysqli_connect("localhost","root","") or die("Khong the ket noi den CSDL");
 	//Lua chon co so du lieu
 	mysqli_select_db($link, "dulieu");
+	mysqli_query($link,"SET NAMES 'utf8'");
 	$sql="select *from table1";
 	$result=mysqli_query($link, $sql);
 	echo'<table border="1" width="100%">';
