@@ -1,43 +1,40 @@
+
 <!DOCTYPE html>
-<html>
+<html >
 <head>
-	<title></title>
-
-</script>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  
 </head>
-<body>
-<h2>
-	<center>
-	Đăng nhập chương trình
-	</center>
-</h2>
-<form method="post" action="xulylogin.php">
-	<table align="center">
-	<tr>
-		<td>Username: </td>
-	<td colspan=2>
-		<input type="text" name="t1">
-	</td>
-	</tr>
-	<tr >
-		<td>Password: </td>
-	<td colspan=2>
-		<input type="Password" name="t2">
-	</td>
-	</tr>
-	<tr>
-		<td>
-			<input type="submit" name="OK" value="OK">
-		</td>
-	<td>
-		<input type="reset" name="Reset" value="Reset">
-	</td>
-	<td>
-		<input type="button" name="Exit" value="Exit">
-	</td>
-	</tr>
-</table>
-</form>
 
+<body >
+	<center>
+<form method="post" action="xulylogin.php">
+    <h1>Login</h1>
+  </div>
+  <div >
+    <p>Username:
+    <input type="text" placeholder="Username" name="t1" /></p>
+    <p>Password:
+    <input type="password" placeholder="Password" name="t2" />
+    </p>
+    <?php
+      $id=$_REQUEST['id'];
+       if ($id=='capnhat') {
+       	# code...
+       	echo " <input type='submit' name='capnhat' value='Login'/>";
+       }
+       if ($id=='them') {
+       	# code...
+       	echo " <input type='submit' name='them' value='Login'/>";
+       }
+      ?>
+   
+    <input type="reset" value="reset" />
+    <input type="button" value="exit"/>
+  </div>
+</div>
+</form>
+</center>
 </body>
 </html>

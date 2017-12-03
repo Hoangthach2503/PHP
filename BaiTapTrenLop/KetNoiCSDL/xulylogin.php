@@ -1,6 +1,8 @@
-<<?php
+<?php
 $user=$_REQUEST['t1'];
 $pass=$_REQUEST['t2'];
+$capnhat=$_REQUEST['capnhat'];
+$them=$_REQUEST['them'];
 if ($user==""||$pass=="") {
 	# code...
 	header("Location: http://localhost:8080/php/BaiTapTrenLop/KetNoiCSDL/login.php");
@@ -24,8 +26,12 @@ else{
 	mysqli_free_result(($result));
 	mysqli_close($link);
 if ($check) {
-	# code...
-	header("Location: http://localhost:8080/php/BaiTapTrenLop/KetNoiCSDL/csdl2.php");
+if ($capnhat!=NULL) {
+# code...
+		header("Location: http://localhost:8080/php/BaiTapTrenLop/KetNoiCSDL/capnhatthongtin.php");}
+if ($them!=NULL) {
+# code...
+		header("Location: http://localhost:8080/php/BaiTapTrenLop/KetNoiCSDL/themnhanvien.php");}	
 }
 else{
 		# code...
