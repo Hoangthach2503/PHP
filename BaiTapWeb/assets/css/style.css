@@ -1,0 +1,162 @@
+﻿
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size:13px;
+    line-height:25px;
+    background-color: #F7F7F7;
+}
+.text-center {
+    text-align:center;
+}
+.pad-top-botm {
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.pad-row {
+    padding-top:20px;
+}
+/*=====================================
+   COLOR CODES
+    ===================================*/
+.clr-white {
+    color:#fff;
+}
+.clr-main {
+ color: #ff6a00;
+}
+.transparent-bk {
+    background-color:transparent!important;
+}
+.clr-blue-bk {
+    background-color:#7383F8!important;
+}
+
+/*=====================================
+   SOCIAL HEADER STYLE SECTION
+    ===================================*/
+.div-social-top {
+    background-color:#565AB1;
+    min-height:40px;
+    padding:20px 50px 10px 50px;
+    color:#fff;
+    font-size:17px;
+}
+    .div-social-top a,.div-social-top a:hover {
+        color:#fff;
+        text-decoration:none;
+    }
+    .div-social-top i {
+         margin-right:10px;
+    }
+
+/*=====================================
+  HOME PAGE STYLES GENERAL
+    ===================================*/
+
+#home-service i {
+    color:#ff6a00;
+    cursor:pointer;
+    
+}
+#home-service i:hover {
+    color:#565AB1;
+     cursor:pointer;
+      -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+#service-info i{
+    margin-right:10px;
+    color:#ff6a00;
+    cursor:pointer;
+    
+}
+#service-info i:hover{
+    color:#000;
+
+     -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.icon-round {
+margin-top: 30px;
+font-size: 60px;
+height: 128px;
+width: 128px;
+line-height: 130px;
+margin-right: 10px;
+text-align: center;
+display: inline-block;
+border-radius: 100%;
+margin-bottom: 10px;
+background-color:rgba(158, 158, 158, 0.15);
+}
+
+.vedio-style {
+    border: 0px;
+     width: 100%; 
+     min-height: 300px
+}
+
+
+
+/*=====================================
+  MEDIA STYLES 
+    ===================================*/
+#media-sec {
+    background-color:#565AB1;
+    padding:20px;
+    color:#fff;
+}
+    #media-sec h3 {
+         color:#AF9BFF;
+    }
+    #media-sec small {
+        color:#ff6a00;
+    }
+
+/*=====================================
+  FOOTER STYLES 
+    ===================================*/
+
+
+#footer-sec {
+
+   background-color:#34296F; 
+   color:#fff;
+   padding:20px;
+}
+#footer-sec i {
+    margin-right:10px;
+}
+#footer-sec span {
+    font-size:20px;
+    color:#ff6a00;
+}
+#footer-sec small {
+    display:table-cell;
+    color: #C5C5C5;
+}
+#footer-sec p {
+   border-right: 1px solid #3D3577;
+   padding-right:10px;
+
+}
+#footer-sec .media-heading > a {
+    color:#fff;
+    font-size:14px;
+}
+#blog-footer-div {
+     border-right: 1px solid #3D3577;
+      padding-right:10px;
+}
+#footser-end {
+    text-align:right;
+  background-color:#21165F; 
+   color:#fff;
+   padding:10px;
+}
+
+
