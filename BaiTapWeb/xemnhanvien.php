@@ -37,6 +37,8 @@
 		$ghichu=$row{"ghichu"};
 		echo "<tr><td>$manv</td><td>$hoten</td><td>$chucvu</td><td>$ghichu</td></tr>";
 	}
+		mysqli_free_result(($result));
+	mysqli_close($link);
 	?>
 </body>
 </html>

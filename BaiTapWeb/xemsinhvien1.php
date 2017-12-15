@@ -22,10 +22,13 @@
 		width: 200px;
 		height: 200px;
 	}
-    li{
-    	list-style-type: none;
-    }
-    p{
+	li{
+		list-style-type: none;
+	}
+	a{
+		text-decoration: none;
+	}
+	p{
 		padding: 1px;
 		margin: 1px;
 	}
@@ -44,7 +47,7 @@
 		<li>
 		<table border='0' width='50%'>
 		<tr>
-		<td colspan='6' width='15%'>
+		<td colspan='7' width='15%'>
 		<img src='data:image/jpeg;base64," . base64_encode($row["avatar"]) . " '/>
 		</td>
 		<td>
@@ -54,13 +57,15 @@
 		<p>Khoa: ".$row["khoa"]." </p>
 		<p>Ngày sinh: ".$row["ngaysinh"]."</p>
 		<p>Phòng: ".$row["tenphong"]."</p>
+		<p><a href='xemnhanvien.php' target='content'>Chỉnh sửa   </a>
+		<a href='xemnhanvien.php' target='content'>&nbsp Xóa</a></p>
 		</td>
 		</tr>
 		</table>
 		</li>";
 	}
 	echo "</ol>";
-		mysqli_free_result(($result));
+	mysqli_free_result(($result));
 	mysqli_close($link);
 	?>
 

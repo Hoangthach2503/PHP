@@ -41,8 +41,8 @@ body {margin:0;}
 <body>
 
 <div class="topnav">
-  <a class="active" href="#home">Trang Chủ</a>
-  <a href="xemsinhvien.php" target="content">Sinh viên</a>
+  <a class="active" href="Trangchu.php" target="content">Trang Chủ</a>
+  <a href="xemsinhvien1.php" target="content">Sinh viên</a>
   <a href="xemnhanvien.php"  target="content">Nhân viên</a>
   <a href="#about">Dãy nhà</a>
   <a href="#about">Phòng</a>
